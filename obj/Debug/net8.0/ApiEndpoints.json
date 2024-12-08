@@ -1,0 +1,1070 @@
+[
+  {
+    "ContainingType": "AsmrsBackend.Controllers.ArtifactsController",
+    "Method": "GetAllArtifacts",
+    "RelativePath": "api/Artifacts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.ArtifactsController",
+    "Method": "CreateArtifact",
+    "RelativePath": "api/Artifacts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "artifact",
+        "Type": "AsmrsBackend.Models.Artifact",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.ArtifactsController",
+    "Method": "GetArtifactById",
+    "RelativePath": "api/Artifacts/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.ArtifactsController",
+    "Method": "UpdateArtifact",
+    "RelativePath": "api/Artifacts/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "artifact",
+        "Type": "AsmrsBackend.Models.Artifact",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.ArtifactsController",
+    "Method": "DeleteArtifact",
+    "RelativePath": "api/Artifacts/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.ArtifactsController",
+    "Method": "GetArtifactsBySiteIdAsync",
+    "RelativePath": "api/Artifacts/site/{siteId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "siteId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AsmrsBackend.Models.Artifact, AsmrsBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.ArtifactTrackingsController",
+    "Method": "GetAllArtifactTrackings",
+    "RelativePath": "api/ArtifactTrackings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.ArtifactTrackingsController",
+    "Method": "CreateArtifactTracking",
+    "RelativePath": "api/ArtifactTrackings",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "artifactTracking",
+        "Type": "AsmrsBackend.Models.ArtifactTracking",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.ArtifactTrackingsController",
+    "Method": "GetArtifactTrackingById",
+    "RelativePath": "api/ArtifactTrackings/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.ArtifactTrackingsController",
+    "Method": "UpdateArtifactTracking",
+    "RelativePath": "api/ArtifactTrackings/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "artifactTracking",
+        "Type": "AsmrsBackend.Models.ArtifactTracking",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.ArtifactTrackingsController",
+    "Method": "DeleteArtifactTracking",
+    "RelativePath": "api/ArtifactTrackings/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.ConservationProjectsController",
+    "Method": "GetAllConservationProjects",
+    "RelativePath": "api/ConservationProjects",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.ConservationProjectsController",
+    "Method": "CreateConservationProject",
+    "RelativePath": "api/ConservationProjects",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "conservationProject",
+        "Type": "AsmrsBackend.Models.ConservationProject",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.ConservationProjectsController",
+    "Method": "GetConservationProjectById",
+    "RelativePath": "api/ConservationProjects/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.ConservationProjectsController",
+    "Method": "UpdateConservationProject",
+    "RelativePath": "api/ConservationProjects/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "conservationProject",
+        "Type": "AsmrsBackend.Models.ConservationProject",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.ConservationProjectsController",
+    "Method": "DeleteConservationProject",
+    "RelativePath": "api/ConservationProjects/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.ConservationProjectsController",
+    "Method": "GetProjectsByContributorId",
+    "RelativePath": "api/ConservationProjects/contributor/{contributorId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contributorId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AsmrsBackend.Models.ConservationProject, AsmrsBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.ExcavationsController",
+    "Method": "GetAllExcavations",
+    "RelativePath": "api/Excavations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.ExcavationsController",
+    "Method": "CreateExcavation",
+    "RelativePath": "api/Excavations",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "excavation",
+        "Type": "AsmrsBackend.Models.Excavation",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.ExcavationsController",
+    "Method": "GetExcavationById",
+    "RelativePath": "api/Excavations/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.ExcavationsController",
+    "Method": "UpdateExcavation",
+    "RelativePath": "api/Excavations/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "excavation",
+        "Type": "AsmrsBackend.Models.Excavation",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.ExcavationsController",
+    "Method": "DeleteExcavation",
+    "RelativePath": "api/Excavations/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.MapsController",
+    "Method": "GetAllMaps",
+    "RelativePath": "api/Maps",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.MapsController",
+    "Method": "CreateMap",
+    "RelativePath": "api/Maps",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "map",
+        "Type": "AsmrsBackend.Models.Map",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.MapsController",
+    "Method": "GetMapById",
+    "RelativePath": "api/Maps/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.MapsController",
+    "Method": "UpdateMap",
+    "RelativePath": "api/Maps/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "map",
+        "Type": "AsmrsBackend.Models.Map",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.MapsController",
+    "Method": "DeleteMap",
+    "RelativePath": "api/Maps/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.NotificationsController",
+    "Method": "GetAllNotifications",
+    "RelativePath": "api/Notifications",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.NotificationsController",
+    "Method": "CreateNotification",
+    "RelativePath": "api/Notifications",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "notification",
+        "Type": "AsmrsBackend.Models.Notification",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.NotificationsController",
+    "Method": "GetNotificationById",
+    "RelativePath": "api/Notifications/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.NotificationsController",
+    "Method": "UpdateNotification",
+    "RelativePath": "api/Notifications/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "notification",
+        "Type": "AsmrsBackend.Models.Notification",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.NotificationsController",
+    "Method": "DeleteNotification",
+    "RelativePath": "api/Notifications/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.PlatformsController",
+    "Method": "GetAllPlatforms",
+    "RelativePath": "api/Platforms",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.PlatformsController",
+    "Method": "CreatePlatform",
+    "RelativePath": "api/Platforms",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "platform",
+        "Type": "AsmrsBackend.Models.Platform",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.PlatformsController",
+    "Method": "GetPlatformById",
+    "RelativePath": "api/Platforms/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.PlatformsController",
+    "Method": "UpdatePlatform",
+    "RelativePath": "api/Platforms/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "platform",
+        "Type": "AsmrsBackend.Models.Platform",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.PlatformsController",
+    "Method": "DeletePlatform",
+    "RelativePath": "api/Platforms/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.PublicationsController",
+    "Method": "GetAllPublications",
+    "RelativePath": "api/Publications",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AsmrsBackend.Models.Publication, AsmrsBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.PublicationsController",
+    "Method": "CreatePublication",
+    "RelativePath": "api/Publications",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "publication",
+        "Type": "AsmrsBackend.Models.Publication",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.PublicationsController",
+    "Method": "GetPublicationById",
+    "RelativePath": "api/Publications/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AsmrsBackend.Models.Publication",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.PublicationsController",
+    "Method": "UpdatePublication",
+    "RelativePath": "api/Publications/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "publication",
+        "Type": "AsmrsBackend.Models.Publication",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.PublicationsController",
+    "Method": "DeletePublication",
+    "RelativePath": "api/Publications/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.PublicationsController",
+    "Method": "GetPublicationsByAuthorId",
+    "RelativePath": "api/Publications/author/{authorId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "authorId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.PublicationsController",
+    "Method": "GetPublicationsBySiteIdAsync",
+    "RelativePath": "api/Publications/site/{siteId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "siteId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AsmrsBackend.Models.Publication, AsmrsBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.ReportsController",
+    "Method": "GetAllReports",
+    "RelativePath": "api/Reports",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.ReportsController",
+    "Method": "CreateReport",
+    "RelativePath": "api/Reports",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "report",
+        "Type": "AsmrsBackend.Models.Report",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.ReportsController",
+    "Method": "GetReportById",
+    "RelativePath": "api/Reports/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.ReportsController",
+    "Method": "UpdateReport",
+    "RelativePath": "api/Reports/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "report",
+        "Type": "AsmrsBackend.Models.Report",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.ReportsController",
+    "Method": "DeleteReport",
+    "RelativePath": "api/Reports/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.SitesController",
+    "Method": "GetAllSites",
+    "RelativePath": "api/Sites",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.SitesController",
+    "Method": "CreateSite",
+    "RelativePath": "api/Sites",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "site",
+        "Type": "AsmrsBackend.Models.Site",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.SitesController",
+    "Method": "GetSiteById",
+    "RelativePath": "api/Sites/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.SitesController",
+    "Method": "UpdateSite",
+    "RelativePath": "api/Sites/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "site",
+        "Type": "AsmrsBackend.Models.Site",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.SitesController",
+    "Method": "DeleteSite",
+    "RelativePath": "api/Sites/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.SitesController",
+    "Method": "GetSiteByDiscoveredById",
+    "RelativePath": "api/Sites/GetByDiscoveredBy/{discoveredById}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "discoveredById",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AsmrsBackend.Models.Site[]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.UserController",
+    "Method": "Login",
+    "RelativePath": "api/User/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AsmrsBackend.Controllers.UserController\u002BLoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.UserController",
+    "Method": "RegisterUser",
+    "RelativePath": "api/User/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "AsmrsBackend.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.VisitorToursController",
+    "Method": "GetAllVisitorTours",
+    "RelativePath": "api/VisitorTours",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.VisitorToursController",
+    "Method": "CreateVisitorTour",
+    "RelativePath": "api/VisitorTours",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "visitorTour",
+        "Type": "AsmrsBackend.Models.VisitorTour",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.VisitorToursController",
+    "Method": "GetVisitorTourById",
+    "RelativePath": "api/VisitorTours/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.VisitorToursController",
+    "Method": "DeleteVisitorTour",
+    "RelativePath": "api/VisitorTours/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.VisitorToursController",
+    "Method": "JoinTour",
+    "RelativePath": "api/VisitorTours/join",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AsmrsBackend.Controllers.JoinTourRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.VisitorToursController",
+    "Method": "GetVisitorToursByTourGuideId",
+    "RelativePath": "api/VisitorTours/tourguide/{tourGuideId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tourGuideId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsmrsBackend.Controllers.VisitorToursController",
+    "Method": "GetVisitorToursByVisitorId",
+    "RelativePath": "api/VisitorTours/visitor/{visitorId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "visitorId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

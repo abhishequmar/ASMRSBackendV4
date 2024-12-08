@@ -1,0 +1,2387 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "AsmrsBackend",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Artifacts": {
+      "get": {
+        "tags": [
+          "Artifacts"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Artifacts"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Artifact"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Artifact"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Artifact"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Artifacts/{id}": {
+      "get": {
+        "tags": [
+          "Artifacts"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Artifacts"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Artifact"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Artifact"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Artifact"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Artifacts"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Artifacts/site/{siteId}": {
+      "get": {
+        "tags": [
+          "Artifacts"
+        ],
+        "parameters": [
+          {
+            "name": "siteId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Artifact"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Artifact"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Artifact"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ArtifactTrackings": {
+      "get": {
+        "tags": [
+          "ArtifactTrackings"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ArtifactTrackings"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ArtifactTracking"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ArtifactTracking"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ArtifactTracking"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ArtifactTrackings/{id}": {
+      "get": {
+        "tags": [
+          "ArtifactTrackings"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ArtifactTrackings"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ArtifactTracking"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ArtifactTracking"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ArtifactTracking"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ArtifactTrackings"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ConservationProjects": {
+      "get": {
+        "tags": [
+          "ConservationProjects"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ConservationProjects"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConservationProject"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConservationProject"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConservationProject"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ConservationProjects/{id}": {
+      "get": {
+        "tags": [
+          "ConservationProjects"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ConservationProjects"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConservationProject"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConservationProject"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConservationProject"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ConservationProjects"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ConservationProjects/contributor/{contributorId}": {
+      "get": {
+        "tags": [
+          "ConservationProjects"
+        ],
+        "parameters": [
+          {
+            "name": "contributorId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ConservationProject"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ConservationProject"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ConservationProject"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Excavations": {
+      "get": {
+        "tags": [
+          "Excavations"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Excavations"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Excavation"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Excavation"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Excavation"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Excavations/{id}": {
+      "get": {
+        "tags": [
+          "Excavations"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Excavations"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Excavation"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Excavation"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Excavation"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Excavations"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Maps": {
+      "get": {
+        "tags": [
+          "Maps"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Maps"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Map"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Map"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Map"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Maps/{id}": {
+      "get": {
+        "tags": [
+          "Maps"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Maps"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Map"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Map"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Map"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Maps"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Notifications": {
+      "get": {
+        "tags": [
+          "Notifications"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Notifications"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Notification"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Notification"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Notification"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Notifications/{id}": {
+      "get": {
+        "tags": [
+          "Notifications"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Notifications"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Notification"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Notification"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Notification"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Notifications"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Platforms": {
+      "get": {
+        "tags": [
+          "Platforms"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Platforms"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Platform"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Platform"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Platform"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Platforms/{id}": {
+      "get": {
+        "tags": [
+          "Platforms"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Platforms"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Platform"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Platform"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Platform"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Platforms"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Publications/{id}": {
+      "get": {
+        "tags": [
+          "Publications"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Publication"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Publication"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Publication"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Publications"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Publication"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Publication"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Publication"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Publications"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Publications": {
+      "get": {
+        "tags": [
+          "Publications"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Publication"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Publication"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Publication"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Publications"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Publication"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Publication"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Publication"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Publications/site/{siteId}": {
+      "get": {
+        "tags": [
+          "Publications"
+        ],
+        "parameters": [
+          {
+            "name": "siteId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Publication"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Publication"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Publication"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Publications/author/{authorId}": {
+      "get": {
+        "tags": [
+          "Publications"
+        ],
+        "parameters": [
+          {
+            "name": "authorId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Reports": {
+      "get": {
+        "tags": [
+          "Reports"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Reports"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Report"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Report"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Report"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Reports/{id}": {
+      "get": {
+        "tags": [
+          "Reports"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Reports"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Report"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Report"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Report"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Reports"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Sites": {
+      "get": {
+        "tags": [
+          "Sites"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Sites"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Site"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Site"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Site"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Sites/{id}": {
+      "get": {
+        "tags": [
+          "Sites"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Sites"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Site"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Site"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Site"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Sites"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Sites/GetByDiscoveredBy/{discoveredById}": {
+      "get": {
+        "tags": [
+          "Sites"
+        ],
+        "parameters": [
+          {
+            "name": "discoveredById",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Site"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Site"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Site"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/User/register": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/User"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/User"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/User"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/login": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/VisitorTours": {
+      "get": {
+        "tags": [
+          "VisitorTours"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VisitorTours"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VisitorTour"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VisitorTour"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/VisitorTour"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/VisitorTours/{id}": {
+      "get": {
+        "tags": [
+          "VisitorTours"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VisitorTours"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/VisitorTours/join": {
+      "post": {
+        "tags": [
+          "VisitorTours"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/JoinTourRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/JoinTourRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/JoinTourRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/VisitorTours/visitor/{visitorId}": {
+      "get": {
+        "tags": [
+          "VisitorTours"
+        ],
+        "parameters": [
+          {
+            "name": "visitorId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/VisitorTours/tourguide/{tourGuideId}": {
+      "get": {
+        "tags": [
+          "VisitorTours"
+        ],
+        "parameters": [
+          {
+            "name": "tourGuideId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Artifact": {
+        "required": [
+          "condition",
+          "dateFound",
+          "material",
+          "name",
+          "preservationStatus",
+          "siteId"
+        ],
+        "type": "object",
+        "properties": {
+          "dId": {
+            "$ref": "#/components/schemas/ObjectId"
+          },
+          "artifactId": {
+            "type": "string",
+            "nullable": true
+          },
+          "siteId": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "name": {
+            "maxLength": 100,
+            "minLength": 3,
+            "type": "string"
+          },
+          "material": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
+          },
+          "condition": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
+          },
+          "culturalSignificance": {
+            "maxLength": 500,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "dateFound": {
+            "type": "string",
+            "format": "date"
+          },
+          "preservationStatus": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ArtifactTracking": {
+        "required": [
+          "artifactId",
+          "currentLocation",
+          "dateMoved"
+        ],
+        "type": "object",
+        "properties": {
+          "dId": {
+            "$ref": "#/components/schemas/ObjectId"
+          },
+          "trackingId": {
+            "type": "string",
+            "nullable": true
+          },
+          "artifactId": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "currentLocation": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "dateMoved": {
+            "type": "string",
+            "format": "date"
+          },
+          "previousLocation": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "purpose": {
+            "maxLength": 200,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "artifact": {
+            "$ref": "#/components/schemas/Artifact"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ConservationProject": {
+        "required": [
+          "conservationMethod",
+          "contributorIds",
+          "fundingSource",
+          "objective",
+          "siteId",
+          "siteName",
+          "startDate"
+        ],
+        "type": "object",
+        "properties": {
+          "dId": {
+            "$ref": "#/components/schemas/ObjectId"
+          },
+          "projectId": {
+            "type": "string",
+            "nullable": true
+          },
+          "siteId": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "siteName": {
+            "maxLength": 200,
+            "minLength": 0,
+            "type": "string"
+          },
+          "objective": {
+            "maxLength": 500,
+            "minLength": 10,
+            "type": "string"
+          },
+          "conservationMethod": {
+            "maxLength": 200,
+            "minLength": 0,
+            "type": "string"
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "fundingSource": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "contributorIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": false
+      },
+      "Excavation": {
+        "required": [
+          "leadArchaeologist",
+          "leadArchaeologistName",
+          "siteId",
+          "siteName",
+          "startDate",
+          "status",
+          "title"
+        ],
+        "type": "object",
+        "properties": {
+          "dId": {
+            "$ref": "#/components/schemas/ObjectId"
+          },
+          "excavationId": {
+            "type": "string",
+            "nullable": true
+          },
+          "siteId": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "siteName": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "title": {
+            "maxLength": 150,
+            "minLength": 5,
+            "type": "string"
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "leadArchaeologist": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "leadArchaeologistName": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "status": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "JoinTourRequest": {
+        "type": "object",
+        "properties": {
+          "tourId": {
+            "type": "string",
+            "nullable": true
+          },
+          "visitorId": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginRequest": {
+        "required": [
+          "email",
+          "password"
+        ],
+        "type": "object",
+        "properties": {
+          "email": {
+            "minLength": 1,
+            "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+            "type": "string"
+          },
+          "password": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Map": {
+        "required": [
+          "coordinates",
+          "dateCreated",
+          "mapType",
+          "siteId"
+        ],
+        "type": "object",
+        "properties": {
+          "dId": {
+            "$ref": "#/components/schemas/ObjectId"
+          },
+          "mapId": {
+            "type": "string",
+            "nullable": true
+          },
+          "siteId": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "mapType": {
+            "maxLength": 50,
+            "minLength": 3,
+            "type": "string"
+          },
+          "coordinates": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "dataLayers": {
+            "maxLength": 500,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "dateCreated": {
+            "type": "string",
+            "format": "date"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Notification": {
+        "required": [
+          "dateSent",
+          "message",
+          "notificationType",
+          "readStatus",
+          "userId"
+        ],
+        "type": "object",
+        "properties": {
+          "dId": {
+            "$ref": "#/components/schemas/ObjectId"
+          },
+          "notificationId": {
+            "type": "string",
+            "nullable": true
+          },
+          "userId": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "message": {
+            "maxLength": 500,
+            "minLength": 0,
+            "type": "string"
+          },
+          "dateSent": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "notificationType": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
+          },
+          "readStatus": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ObjectId": {
+        "type": "object",
+        "properties": {
+          "timestamp": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "creationTime": {
+            "type": "string",
+            "format": "date-time",
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Platform": {
+        "required": [
+          "deviceType",
+          "lastAccessDate",
+          "preferredLanguage",
+          "userId"
+        ],
+        "type": "object",
+        "properties": {
+          "dId": {
+            "$ref": "#/components/schemas/ObjectId"
+          },
+          "platformId": {
+            "type": "string",
+            "nullable": true
+          },
+          "userId": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "deviceType": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
+          },
+          "lastAccessDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "preferredLanguage": {
+            "maxLength": 20,
+            "minLength": 0,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Publication": {
+        "required": [
+          "authorId",
+          "authorName",
+          "datePublished",
+          "fileLink",
+          "siteId",
+          "title"
+        ],
+        "type": "object",
+        "properties": {
+          "dId": {
+            "$ref": "#/components/schemas/ObjectId"
+          },
+          "publicationId": {
+            "type": "string",
+            "nullable": true
+          },
+          "siteId": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "authorId": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "authorName": {
+            "maxLength": 100,
+            "minLength": 3,
+            "type": "string"
+          },
+          "title": {
+            "maxLength": 200,
+            "minLength": 5,
+            "type": "string"
+          },
+          "abstract": {
+            "maxLength": 1000,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "datePublished": {
+            "type": "string",
+            "format": "date"
+          },
+          "fileLink": {
+            "minLength": 1,
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Report": {
+        "required": [
+          "content",
+          "dateGenerated",
+          "generatedBy",
+          "reportType",
+          "siteId"
+        ],
+        "type": "object",
+        "properties": {
+          "dId": {
+            "$ref": "#/components/schemas/ObjectId"
+          },
+          "reportId": {
+            "type": "string",
+            "nullable": true
+          },
+          "siteId": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "reportType": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "content": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "dateGenerated": {
+            "type": "string",
+            "format": "date"
+          },
+          "generatedBy": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Site": {
+        "required": [
+          "discoveredById",
+          "location",
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "dId": {
+            "$ref": "#/components/schemas/ObjectId"
+          },
+          "siteId": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "maxLength": 100,
+            "minLength": 3,
+            "type": "string"
+          },
+          "location": {
+            "maxLength": 200,
+            "minLength": 0,
+            "type": "string"
+          },
+          "historicalPeriod": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "maxLength": 1000,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "discoveredById": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "conservationStatus": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "dateDiscovered": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "imageUrl": {
+            "maxLength": 500,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "User": {
+        "required": [
+          "email",
+          "name",
+          "password",
+          "role"
+        ],
+        "type": "object",
+        "properties": {
+          "dId": {
+            "$ref": "#/components/schemas/ObjectId"
+          },
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "email": {
+            "minLength": 1,
+            "type": "string",
+            "format": "email"
+          },
+          "password": {
+            "maxLength": 100,
+            "minLength": 6,
+            "type": "string",
+            "format": "password"
+          },
+          "role": {
+            "minLength": 1,
+            "pattern": "^(Admin|Archaeologist|Conservator|Researcher|Visitor|Tourguide)$",
+            "type": "string"
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "lastLogin": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "VisitorTour": {
+        "required": [
+          "bookingStatus",
+          "capacity",
+          "date",
+          "description",
+          "duration",
+          "imageUrl",
+          "siteId",
+          "siteName",
+          "time",
+          "tourGuideId"
+        ],
+        "type": "object",
+        "properties": {
+          "dId": {
+            "$ref": "#/components/schemas/ObjectId"
+          },
+          "tourId": {
+            "type": "string",
+            "nullable": true
+          },
+          "siteId": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "tourGuideId": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "time": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "capacity": {
+            "maximum": 1000,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
+          },
+          "duration": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "description": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "bookingStatus": {
+            "maxLength": 50,
+            "minLength": 0,
+            "type": "string"
+          },
+          "imageUrl": {
+            "maxLength": 200,
+            "minLength": 0,
+            "type": "string"
+          },
+          "siteName": {
+            "maxLength": 200,
+            "minLength": 0,
+            "type": "string"
+          },
+          "visitorIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

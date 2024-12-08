@@ -1,0 +1,6 @@
+@AsmrsBackend_HostAddress = http://localhost:5081
+
+GET {{AsmrsBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
