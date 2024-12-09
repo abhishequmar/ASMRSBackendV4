@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ASMRSBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+641b2981d636970e29a3de99cbf107d2733269dd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b92ea4b4409b8a36588ad30e451c327c78d8b97")]
 [assembly: System.Reflection.AssemblyProductAttribute("ASMRSBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ASMRSBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
